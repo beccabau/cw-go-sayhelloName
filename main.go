@@ -32,5 +32,5 @@ func helloName(c *gin.Context) {
 	name := c.Param("name")
 	currentTime := time.Now()
 	formattedTime := currentTime.Format("2006-01-02 15:04:05 Monday")
-	c.String(http.StatusOK, "Hello %s. It is currently %s", name, formattedTime)
+	c.String(http.StatusOK, "Hello %s. It is currently %s.", name, formattedTime)
 }
